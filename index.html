@@ -28,7 +28,7 @@ end
 end
 
  gg.toast("正在连接安全证书15％") gg.sleep(320) gg.toast("正在注入数据30％") gg.sleep(320) print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)
-gg.toast("正在连接IP48％")
+gg.toast("正在连接本地48％")
 gg.sleep(320)
 gg.toast("正在连接网络64%")
 gg.sleep(360)
@@ -36,7 +36,7 @@ gg.toast("正在连接马达科技76%")
 gg.sleep(360)
 gg.toast("正在重新检测安全证书85%")
 gg.sleep(360)
-gg.toast("成功吃屎99%")
+gg.toast("开启失败，但可使用99% 错误:安全证书错误 *263   Your mobile phone network is not stable, can not connect to the day to run the auxiliary script, such as can not run, please check the network Detect the current network instability, is connecting to the standby server, may not be your network problem, perhaps the server strike   Contact the author to fix the BUG ")
 gg.sleep(100)
 
 
@@ -53,9 +53,9 @@ function Main()
 SJ = os.date("当前时间%Y年%m月%d日%H时%M分%S秒")
 SN = gg.choice({
 	 "天跑辅助2.5 beta6",
-	 "天跑辅助简洁版2.7",
+	 "天跑辅助简洁版2.6",
 	 "退出",
-}, nil, "给爷选")
+}, nil, "给爷选，提示错误不要管")
 if SN==1 then
      TP()
 end
@@ -69,11 +69,11 @@ FX=0
 end
 
 function TP()
-gg.alert("本辅助正在维修，请耐心等待，去用简洁版吧")
-
+ gg.alert("该辅助已停运，请去使用简洁版，在8.16时候恢复")
+end
 
 function TPJJ()
- pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/TPNB2.7.html").content))
+ pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/TPNB2.6.html").content))
 end
 
 

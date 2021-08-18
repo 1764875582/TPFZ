@@ -1,0 +1,47 @@
+gg.alert("该外挂已违法，目前作者已被抓捕")
+gg.alert("该外挂让迷你玩科技有限公司损失100人民币")
+gg.alert("并且该辅助损坏“迷你世界”的经营，请立即退出本辅助，不要继续损坏迷你玩科技有限公司的经营，谢谢你的配合")
+
+function Main()
+SJ = os.date("北京时间:%Y年%m月%d日%H时%M分%S秒")
+menu = gg.choice({
+	 "退出",
+}, nil, "作者已被抓捕\n"..SJ.."\n作者因损坏迷你玩科技有限公司的经营而被抓捕\n作者已被抓捕")
+if menu == 1 then Exit() end
+FX1=0
+end
+
+
+
+
+
+
+
+
+
+
+
+
+function Exit()
+  print("谢谢您的配合，抵制外挂，共创绿色游戏环境!")
+  os.exit()
+end
+
+
+
+
+
+
+
+cs = ''
+while(true)do
+  if gg.isVisible(true) then
+    XGCK=1
+    gg.setVisible(false)
+  end
+  gg.clearResults()
+  if XGCK==1 then
+    Main()
+  end
+end
+

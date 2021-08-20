@@ -54,7 +54,7 @@ menu = gg.choice({
 	 "开始辅助",
 	 "查看天气",
 	 "退出辅助",
-}, nil, "V2.6 beta6 版本号\n"..SJ.."\n天青色等烟雨，而我在等你，欢迎来到天跑辅助，注:天跑辅助不只是炸图，点取消没效果正常\n官网:tq.zhatu.xyz")
+}, nil, "V2.6 beta6 版本号\n"..SJ.."\n天青色等烟雨，而我在等你，欢迎来到天跑辅助，注:天跑辅助不只是炸图，点取消没效果正常\n官网:http://www.tianpao.top")
 if menu == 1 then main1() end
 if menu == 2 then TQ() end
 if menu == 3 then Exit() end
@@ -142,7 +142,7 @@ function main1()
   if menu == 3 then D() end
   if menu == 4 then E() end
   if menu == 5 then Main6() end 
-  if menu == 6 then TQMD() end
+  if menu == 6 then TPMD() end
   if menu == 7 then HOME() end
   XGCK=-1
 end
@@ -316,9 +316,9 @@ function C()
     '崩云服',
     '附身',
     '免手机打字',
-    '',
-    '',
-    '',
+    '无视拉黑',
+    '解锁物品',
+    '家园25级',
     '返回上一页'},
   nil,'其它功能区')
   if menu1 == nil then else
@@ -328,8 +328,8 @@ function C()
     if menu1[4] == true then c4() end
     if menu1[5] == true then c5() end
     if menu1[6] == true then c6() end
-    if menu1[7] == true then c7() end --傻逼
-    if menu1[8] == true then c8() end
+    if menu1[7] == true then c7() end 
+    if menu1[8] == true then c8() end --傻逼
     if menu1[9] == true then c9() end
     if menu1[10] == true then c10() end
     if menu1[11] == true then HOME() end
@@ -1500,7 +1500,7 @@ function E2a2()
 	 gg.searchNumber("16777472;16777216;16777472;16777216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 	 gg.searchNumber("99999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 	 gg.getResults(100)
-	 gg.toast("时间已过，自动开始崩服")
+	 gg.toast("时间已过，自动卡爆云服")
      gg.clearResults()
      Main0()
 end
@@ -1622,6 +1622,299 @@ function c7()
 	 gg.clearResults()
 end
 
+function c8()
+gg.alert("教程:在被拉黑的界面开启功能，退出，再回到那个地图，你会发现没有被拉黑了")
+  gg.clearResults()
+  gg.setRanges(262207)
+  gg.searchNumber("16777472", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("现在退出地图，点击辅助悬浮窗")
+  while true do
+    if gg.isVisible(true) then
+      gg.setVisible(false)
+      gg.searchNumber("16777216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+      gg.toast("现在再回到地图，点击辅助悬浮窗")
+      while true do
+        if gg.isVisible(true) then
+          gg.setVisible(false)
+          gg.searchNumber("16777472", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+          jg=gg.getResults(100)
+          sl=gg.getResultCount()
+          if sl>100 then sl=100 end
+          for i = 1, sl do
+            dzy=jg[i].address
+            gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 16777216}})
+          end
+            gg.toast("无视拉黑开启成功（只能用一次，其他要重新开这个功能）")
+            gg.clearResults()
+           break
+          end
+        end
+        break
+      end
+    end
+  end
+
+function c9()
+gg.alert("使用教程:去迷你工坊下个跑酷地图，开房间，随便点击个物品，弹出重置模式（忘了）退出去，再解锁，你发现进其他房间所有危险品都可以用了")
+SN = gg.multiChoice({
+	 "解锁火箭背包",
+	 "解锁火箭筒",
+	 "解锁弩",
+	 "解锁大爆竹",
+	 "解锁弹弓",
+	 "解锁公主床",
+	 "解锁豪华木床",
+	 "返回主页",
+	 "退出脚本",
+}, nil, "解锁各种物品")
+if SN[1]==true then
+	 HS4()
+end
+if SN[2]==true then
+	 HS8()
+end
+if SN[3]==true then
+	 HS9()
+end
+if SN[4]==true then
+	 HS10()
+end
+if SN[5]==true then
+	 HS11()
+end
+if SN[6]==true then
+	 HS12()
+end
+if SN[7]==true then
+	 HS13()
+end
+if SN[8]==true then
+	 HS5()
+end
+if SN[9]==true then
+	 HS6()
+end
+FX1=0
+end
+
+function HS4()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("12253;91", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("91", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁火箭背包-修改完成")
+	 gg.clearResults()
+end
+
+function HS8()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("12284;62", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("62", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁火箭筒-修改完成")
+	 gg.clearResults()
+end
+
+function HS9()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("12283;61", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("61", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁弩-修改完成")
+	 gg.clearResults()
+end
+
+function HS10()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("12280;59", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("59", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁大爆竹-修改完成")
+	 gg.clearResults()
+end
+
+function HS11()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("12281;60", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("60", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁弹弓-修改完成")
+	 gg.clearResults()
+end
+
+function HS12()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("885;32", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("32", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁公主床-修改完成")
+	 gg.clearResults()
+end
+
+function HS13()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("884;31", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("31", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	 jg=gg.getResults(100)
+	 sl=gg.getResultCount()
+	 if sl>100 then sl=100 end
+	 for i = 1, sl do
+	 	 dzy=jg[i].address
+	 	 gg.addListItems({[1] = {address = dzy,flags = gg.TYPE_DWORD,freeze = true,value = 0}})
+	 end
+	 gg.toast("解锁豪华木床-修改完毕")
+	 gg.clearResults()
+end
+
+function HS5()
+	 Main0()
+end
+
+function HS6()
+	 os.exit()
+end
+
+function c10()
+gg.alert("狗作者修复了本功能，本功能教程:找到你对应的等级，把1和2钩上，确定，就可以了，注意:本功能只能领徽章，其余的没啥用")
+SN = gg.choice({
+	 "家园等级1",
+	 "家园等级2",
+	 "家园等级3",
+	 "家园等级4",
+	 "家园等级5",
+	 "家园等级6",
+}, nil, "表面上他爱着你，但他早就跟别人去了")
+if SN==1 then
+	 HS3()
+end
+if SN==2 then
+	 HS4()
+end
+if SN==3 then
+	 HS5()
+end
+if SN==4 then
+	 HS6()
+end
+if SN==5 then
+	 HS7()
+end
+if SN==6 then
+	 HS8()
+end
+FX1=0
+end
+
+function HS3()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("1;70", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.getResults(100)
+	 gg.editAll("25", gg.TYPE_DOUBLE)
+	 gg.toast("年轻人，千万不要砍这棵树")
+	 gg.clearResults()
+end
+
+function HS4()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.getResults(100)
+	 gg.editAll("", gg.TYPE_DOUBLE)
+	 gg.toast("我离开一下")
+	 gg.clearResults()
+end
+
+function HS5()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.getResults(100)
+	 gg.editAll("", gg.TYPE_DOUBLE)
+	 gg.toast("过了10年")
+	 gg.clearResults()
+end
+
+function HS6()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("4;140", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("4", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.getResults(100)
+	 gg.editAll("25", gg.TYPE_DOUBLE)
+	 gg.toast("这个人还没回来了")
+	 gg.clearResults()
+end
+
+function HS7()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.getResults(100)
+	 gg.editAll("", gg.TYPE_DOUBLE)
+	 gg.toast("说好的只离开一下，却失信了")
+	 gg.clearResults()
+end
+
+function HS8()
+	 gg.clearResults()
+	 gg.setRanges(262207)
+	 gg.searchNumber("6;260", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.searchNumber("6", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
+	 gg.getResults(100)
+	 gg.editAll("25", gg.TYPE_DOUBLE)
+	 gg.toast("爱上对方过后就哭了")
+	 gg.clearResults()
+end
+
+
 
 --[=[
          
@@ -1720,13 +2013,13 @@ function YY998() Obtain=gg.makeRequest("https://api.uomg.com/api/rand.music?sort
 --主页
 
 function Main6()  SN = gg.choice({
-   "💎搜索歌曲💎",
-   "💎搜索列表💎",
-   "💎播放热歌💎",
-   "💎️停止播放💎",
-   "💎️清除冻结💎",
-   "🌸返回主页️🌸",
-},2018,os.date("🌸搜索和播放歌曲。🌸"))
+   "搜索歌曲",
+   "搜索列表",
+   "播放热歌",
+   "停止播放",
+   "清除冻结",
+   "返回主页️",
+},2018,os.date("爱上对方过后就哭了"))
 if SN==1 then s1() end
 if SN==2 then Play(gqlb,idb) end
 if SN==3 then YY998() end
@@ -1792,6 +2085,212 @@ end
 XGCK=-1
 end
 
+function TPMD()
+SN = gg.choice({
+     "功能详解",
+	 "游戏崩溃",
+	 "清理冻结数据",
+     "流量管理",
+     "测试区",
+     "关于辅助",
+	 "更新检测",
+}, nil, "本功能可以给您提供一些帮助\n本功能源码来自XE\n请前往官网发帖求助\n官网链接:\nhttp://www.tianpao.top")
+if SN==1 then F1() end
+if SN==2 then F2() end
+if SN==3 then F3() end
+if SN==4 then F4() end
+if SN==5 then F5() end
+if SN==6 then F6() end
+if SN==7 then F7() end
+FX1=0 end
+
+function F1()
+SN = gg.choice({
+     "隐藏辅助",
+     "冻结数据",
+     "没有我要了解的问题",
+},nil,"请选择需要了解的内容")
+if SN==1 then
+     F1a1()
+end
+if SN==2 then
+     F1a2()
+end
+if SN==3 then
+     F1a3()
+end
+FX1=0
+end
+
+function F1a1()
+     gg.alert("隐藏辅助可有效增加稳定性，相应的每开启一项就会降低辅助的性能\n1、2、3、4项详解:\n1 此选项会使快速失效不建议开启\n2 此选项对辅助的影响不大\n3 此选项对辅助影响不大\n4 此选项会使变速失效\n推荐开启2、3项即可\n更多问题请到官网发帖")
+     gg.copyText("http://www.tianpao.top")
+     gg.toast("已为您复制官网链接")
+end
+
+function F1a2()
+     gg.alert("冻结数据是永久保留的数据\n冻结数据是指让数据锁定例如:无限连跳、无敌锁血等\n这些功能每次开启都会产生冻结数据当您进入第二场游戏时他们依然存在但您仍需要重新开启功能\n当这些数据过多是就会导致游戏检测出现崩溃等问题\n所以您每隔一段时间都需要清理冻结数据\n更多问题请到官网发帖")
+     gg.copyText("www.zhatu.xyz")
+     gg.toast("已为您复制官网链接")
+end
+
+function F1a3()
+     gg.alert("请到官网发帖提出问题")
+     gg.copyText("http://www.tianpao.top")
+     gg.toast("已为您复制官网链接")
+end
+
+function F2()
+SN = gg.choice({
+     "开启某个功能后闪退",
+     "进入游戏几秒后闪退",
+     "以上均不是",
+},nil,"请选择问题类型")
+if SN==1 then
+     F2a1()
+end
+if SN==2 then
+     F2a2()
+end
+if SN==3 then
+     F2a3()
+end
+FX1=0
+end
+
+function F2a1()
+     gg.alert("1.可能是您开启的功能过多导致\n2.也可能是某个功能开启后导致\n解决方法:请退出辅助在修改器的设置中选择隐藏辅助之后勾选2、3项保存即可\n若仍然无法解决请在官网发帖求助\n温馨提示:如果不懂此选项🉑在设置讲解中查看")
+     gg.copyText("http://www.tianpao.top")
+     gg.toast("已为您复制官网链接请使用浏览器搜索")
+end
+
+function F2a2()
+	 gg.alert("1.一般为框架问题建议更换框架\n2.也可能是游戏问题可多试几次确认\n若仍然无法解决请在官网发帖求助")
+     gg.copyText("http://www.tianpao.top")
+     gg.toast("已为您复制官网链接请使用浏览器搜索")
+end
+
+function F2a3()
+     gg.alert("您的问题较为特殊无法直接为您解决\n请前往官网发帖求助")
+     gg.copyText("http://www.tianpao.top")
+     gg.toast("已为您复制官网链接请使用浏览器搜索")
+end
+
+function F3()
+     gg.toast("开启清理")
+     gg.sleep(500)
+     gg.toast("正在分析数据")
+     gg.sleep(1300)
+     gg.toast("清理中")
+     gg.sleep(1000)
+     gg.clearList()
+     gg.toast("清理完成")
+end
+
+function F4()
+SN = gg.choice({
+     "流量查询(非个人)",
+     "捐赠(支持作者)",
+     "返回主页",
+},nil,"请选择需要了解的内容")
+if SN==1 then
+     F4a1()
+end
+if SN==2 then
+     F4a2()
+end
+if SN==3 then
+     F4a3()
+end
+FX1=0
+end
+
+function F4a1()
+     gg.alert("本功能没有用")
+end
+
+function F4a2()
+     gg.alert("已为您复制链接打开浏览器进入链接即可")
+     gg.copyText("http://www.tianpao.top/Money.html")
+     gg.alert("感谢捐款")
+end
+
+function F5()
+gg.alert("源码来自XE，本辅助为了你们的快乐，没有测试区")
+end
+
+function F6()
+SN = gg.choice({
+     "贡献人员",
+     "防骗通知",
+     "返回主页",
+},nil,"请选择问题类型")
+if SN==1 then
+     F6a1()
+end
+if SN==2 then
+     F6a2()
+end
+if SN==3 then
+     F6a3()
+end
+FX1=0
+end
+
+function F6a1()
+SN = gg.choice({
+     "我自己",
+     "CA",
+     "马达",
+     "返回主页",
+},nil,"贡献人员")
+if SN==1 then
+     F6a1a1()
+end
+if SN==2 then
+     F6a1a2()
+end
+if SN==3 then
+     F6a1a3()
+end
+if SN==4 then
+     F6a1a4()
+end
+FX1=0
+end
+
+function F6a1a1()
+     gg.alert("本辅助作者，QQ号sm")
+     F5a1()
+end
+
+function F6a1a2()
+     gg.alert("制作功能数\n1.CA炸图辅助")
+     F5a1()
+end
+
+function F6a1a3()
+     gg.alert("\n帮我开网站")
+     F5a1()
+end
+
+function F6a1a4()
+     Main()
+end
+
+function F6a2()
+     gg.alert("本辅助于2021年7月发布以来一直都属于完全免费，直至后来被许多人使用，依然有许多倒卖⭕钱，本辅助会一直免费正确下载渠道http://www.tianpao.top,若花钱够买说明你被骗了!")
+end
+
+function F6a3()
+     Main()
+end
+
+function F7()
+     gg.alert("当前版本自动更新版，辅助会自动更新，修改器更新会自动提醒")
+     gg.copyText("http://www.tianpao.top")
+     gg.toast("已为您复制官网链接请使用浏览器搜索")
+end
 
 function Exit()
 print("原夜里有人到你去看星辰划破天空，欢迎下次使用天跑迷你辅助") 

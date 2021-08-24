@@ -319,6 +319,8 @@ function C()
     '无视拉黑',
     '解锁物品',
     '家园25级',
+    '伪房主',
+    '防踢',
     '返回上一页'},
   nil,'其它功能区')
   if menu1 == nil then else
@@ -331,8 +333,10 @@ function C()
     if menu1[7] == true then c7() end 
     if menu1[8] == true then c8() end --傻逼
     if menu1[9] == true then c9() end
-    if menu1[10] == true then c10() end
-    if menu1[11] == true then HOME() end
+    if menu1[10] == true then c10() end   
+    if menu1[11] == true then c9() end
+    if menu1[12] == true then c10() end
+    if menu1[13] == true then HOME() end
   end
   GLWW=-1
 end
@@ -1914,7 +1918,37 @@ function HS8()
 	 gg.clearResults()
 end
 
+function c11()
+b31a= gg.prompt({"输入房主迷你号"},{[1]=0},{[1]="number"})[1]
+qmnb = {
+{["memory"] = 4},
+{["name"] = "伪房主"},
+{["value"] = b31a, ["type"] = 4},
+{["lv"] = 2, ["offset"] = 44, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 3, ["offset"] = 44, ["type"] = 4},
+}
+xqmnb(qmnb)
+gg.clearResults()
+end
 
+function c12()
+b= gg.prompt({"输入房主迷你号"},{[1]=1063435366},{[1]="number"})[1]
+qmnb = {
+{["memory"] = 4},
+{["name"] = "防踢"},
+{["value"] = b, ["type"] = 4},
+{["lv"] = 2, ["offset"] = 44, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 3, ["offset"] = 44, ["type"] = 4},
+{["value"] = 16777472, ["offset"] = -32, ["type"] = 4},
+{["value"] = 16777216, ["offset"] = -32, ["type"] = 4},
+}
+xqmnb(qmnb)
+gg.clearResults()
+end
 
 --[=[
          

@@ -58,33 +58,7 @@ end
 end
 end
 
-gg.alert("正在检查安全证书，请耐心等待QQ群：645398481")
 
-ffvpn = "https://biaozhunshijian.bmcx.com"
-
-ffvpn = "https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F"
-
-x = tostring(gg.makeRequest(ffvpn))
-
-if not x or not x:sub(1, 20) then
-
-  gg.alert("老子无法访问网络请查看相应限权", "")
-
-elseif #x < 100 or x:find("SSL") or x:find("I/O") or x:find("javax") then
-
-  gg.alert("❗️❗️❗️\n网络未开启，或者安全证书失效，即将检测安全证书！")
-
-else
-
-while #tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")) < 100 or tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")):find("SSL") or tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")):find("I/O") or tostring(gg.makeRequest("https://vpn.uibe.edu.cn/por/phone_index.csp?rnd=0.23178949332658605#https%3A%2F%2Fvpn.uibe.edu.cn%2F")):find("javax") do
-
-os.remove(gg.getFile():match("[^/]*$"))
-
-print("nmsl")
-
-sj= os.date("%Y%m%d%H%M%S")-xc    gg.alert("本次辅助运行使用时长:"..sj.."秒") os.exit()
-end
-end
 
 gg.alert("更新公告:3.0  简洁版，伪房主，直接不管房主禁用，直接开权限，防踢，直接无视房主把你踢了，选择界面更新了拉黑系统")
 
@@ -105,7 +79,7 @@ gg.sleep(100)
 --交流群：645398481
 --请勿搬运代码以及二改圈钱
 --二改没🐎
---请把游戏更新至最新版本1.3.0
+--请把游戏更新至最新版本
 --游戏版本过低将无法使用该脚本
 
 
@@ -113,8 +87,8 @@ gg.sleep(100)
 function Main()
 SJ = os.date("当前时间%Y年%m月%d日%H时%M分%S秒")
 SN = gg.choice({
-	 "天跑辅助2.5 beta6",
-	 "天跑辅助简洁版2.6",
+	"天跑辅助2.5 ",
+	 "天跑辅助简洁版",
 	 "退出",
 }, nil, "恭喜你可以使用🌚")
 if SN==1 then

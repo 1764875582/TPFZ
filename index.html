@@ -1,6 +1,11 @@
+Y=gg.makeRequest(string.char(104,116,116,112,115,58,47,47,118,49,46,104,105,116,111,107,111,116,111,46,99,110,47)).content
+--获取云端数据
+Q=string.match(Y,string.char(104,105,116,111,107,111,116,111,40,46,43,41,116,121,112,101))
+--模式匹配他们中的一切字符
+F=string.gsub(Q,string.char(34,58,34),string.char())
+K=string.gsub(F,string.char(34,44,34),string.char())
 
-qingchun="获取手机存诸信息.....验证身份是否异常...","继续"
-gg.alert("开始验证"..qingchun.."开启验证点确定","确定")
+gg.alert("开始验证，开启验证点确定","确定")
 function file_exists(path)
 local file=io.open(path,"rb")
 if file then
@@ -60,7 +65,7 @@ end
 
 
 
-gg.alert("更新公告:3.0  简洁版，伪房主，直接不管房主禁用，直接开权限，防踢，直接无视房主把你踢了，选择界面更新了拉黑系统")
+gg.alert("更新公告:苏维埃辅助测试版来了，迅速泛滥")
 
  gg.toast("正在连接安全证书15％") gg.sleep(320) gg.toast("正在注入数据30％") gg.sleep(320) print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)
 gg.toast("正在连接本地48％")
@@ -71,7 +76,7 @@ gg.toast("正在连接马达科技76%")
 gg.sleep(360)
 gg.toast("正在重新检测安全证书85%")
 gg.sleep(360)
-gg.toast("开启失败，但可使用99% 错误:安全证书错误 *263   Your mobile phone network is not stable, can not connect to the day to run the auxiliary script, such as can not run, please check the network Detect the current network instability, is connecting to the standby server, may not be your network problem, perhaps the server strike   Contact the author to fix the BUG ")
+gg.toast("开启成功 ")
 gg.sleep(100)
 
 
@@ -89,6 +94,7 @@ SJ = os.date("当前时间%Y年%m月%d日%H时%M分%S秒")
 SN = gg.choice({
 	"天跑辅助2.5 ",
 	 "天跑辅助简洁版",
+	 "苏维埃辅助测试版（迅速泛滥）",
 	 "退出",
 }, nil, "恭喜你可以使用🌚")
 if SN==1 then
@@ -98,6 +104,9 @@ if SN==2 then
 	 TPJJ()
 end
 if SN==3 then
+	 SWA()	 
+end
+if SN==4 then
 	 Exit()	 
 end
 FX=0
@@ -111,7 +120,9 @@ function TPJJ()
  pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/TPNB.html").content))
 end
 
-
+function SWA()
+pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/SWA.html").content))
+end
 
 
 
@@ -137,20 +148,3 @@ while(true)do
     Main()
   end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

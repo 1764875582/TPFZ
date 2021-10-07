@@ -2,11 +2,26 @@ wljbht = "http://www.iyuji.cn/iyuji/s/b0s3bGFuWUE5bkplUlZvcEhJZkIvZz09/162848589
   BX = gg.makeRequest(wljbht).content
     qwtjqdcs = BX:match("<div class=\"read_txt\">阅读&nbsp; (.-)</div>")
     gg.alert("苏维埃辅助总共被启动：" .. qwtjqdcs .. "次")
-    function WX(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试更换房间")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功，请切换一下物品\n 共注入 1 条冻结数据")else gg.toast(qmnbn.."开启失败，请尝试更换房间")end end end
- function XE(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试重启游戏")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功\n 共注入 1 条数据")else gg.toast(qmnbn.."开启失败，请尝试重启游戏")end end end function CA(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试重启游戏")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功\n 共注入 1 条数据")else gg.toast(qmnbn.."开启失败，请尝试重启游戏")end end end function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]['offset'] xglx = qmxg[x]['type'] xgsz = qmxg[x]['value'] xgdj = qmxg[x]['freeze'] if xgdj == nil or xgdj == '' then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]['memory']) gg.searchNumber(qmnb[3]['value'], qmnb[3]['type']) if gg.getResultCount() == 0 then gg.toast('ༀid'..qmnb[2]['name'] .. '开启失败ༀ') else gg.refineNumber(qmnb[3]['value'], qmnb[3]['type']) gg.refineNumber(qmnb[3]['value'], qmnb[3]['type']) gg.refineNumber(qmnb[3]['value'], qmnb[3]['type']) if gg.getResultCount() == 0 then gg.toast('ༀid'..qmnb[2]['name'] .. '情书丢失ༀ') else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]['offset'] pysz[1].flags = qmnb[v]['type'] szpy = gg.getValues(pysz) pdpd = qmnb[v]['lv'] .. ';' .. szpy[1].value szpd = split(pdpd, ';') tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast('\n✔️id:'..qmnb[2]['name']..'成功📝共修改' .. xgsl .. '封情书') else gg.toast('ༀid'..qmnb[2]['name'] .. '开启失败，情书不见了ༀ') end end end end --[[配置1]]function js(address,flags,value) local jz={} jz[1]={} jz[1].address=address jz[1].flags=flags jz[1].value=value gg.setValues(jz) end --[[配置2]]function jz(py,xl,xgsz) flags=xl value=xgsz so=gg.getRangesList(''..name..'')[1].start js(so+py,xl,xgsz) end function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find (szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len (szFullString)) break end nSplitArray[nSplitIndex] = string.sub (szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len (szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] xgdj = qmxg[x]["freeze"] if xgdj == nil or xgdj == "" then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "失败") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "丢失情书") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "成功接受情书" .. xgsl .. "封") else gg.toast(qmnb[2]["name"] .. "爱失败了") end end end end
+ --天跑/苏维埃 配置区，辅助开启
+  
+     function WX(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试更换房间")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功，请切换一下物品\n 共注入 1 条冻结数据")else gg.toast(qmnbn.."开启失败，请尝试更换房间")end end end
+ function XE(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试重启游戏")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功\n 共注入 1 条数据")else gg.toast(qmnbn.."开启失败，请尝试重启游戏")end end end 
+ function CA(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试重启游戏")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功\n 共注入 1 条数据")else gg.toast(qmnbn.."开启失败，请尝试重启游戏")end end end function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]['offset'] xglx = qmxg[x]['type'] xgsz = qmxg[x]['value'] xgdj = qmxg[x]['freeze'] if xgdj == nil or xgdj == '' then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]['memory']) gg.searchNumber(qmnb[3]['value'], qmnb[3]['type']) if gg.getResultCount() == 0 then gg.toast('ༀid'..qmnb[2]['name'] .. '开启失败ༀ') else gg.refineNumber(qmnb[3]['value'], qmnb[3]['type']) gg.refineNumber(qmnb[3]['value'], qmnb[3]['type']) gg.refineNumber(qmnb[3]['value'], qmnb[3]['type']) if gg.getResultCount() == 0 then gg.toast('ༀid'..qmnb[2]['name'] .. '情书丢失ༀ') else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]['offset'] pysz[1].flags = qmnb[v]['type'] szpy = gg.getValues(pysz) pdpd = qmnb[v]['lv'] .. ';' .. szpy[1].value szpd = split(pdpd, ';') tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast('\n✔️id:'..qmnb[2]['name']..'成功📝共修改' .. xgsl .. '封情书') else gg.toast('ༀid'..qmnb[2]['name'] .. '开启失败，情书不见了ༀ') end end end end --[[配置1]]function js(address,flags,value) local jz={} jz[1]={} jz[1].address=address jz[1].flags=flags jz[1].value=value gg.setValues(jz) end --[[配置2]]function jz(py,xl,xgsz) flags=xl value=xgsz so=gg.getRangesList(''..name..'')[1].start js(so+py,xl,xgsz) end function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find (szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len (szFullString)) break end nSplitArray[nSplitIndex] = string.sub (szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len (szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] xgdj = qmxg[x]["freeze"] if xgdj == nil or xgdj == "" then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "失败") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "丢失情书") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "成功接受情书" .. xgsl .. "封") else gg.toast(qmnb[2]["name"] .. "爱失败了") end end end end
 function BX(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启成功，注入3条数据!")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功\n          共注入 3 条数据")else gg.toast(qmnbn.."开启失败，共注入3条数据!8")end end end
-gg.alert("该版本为v1.0 beta2")
-gg.alert("介绍:该辅助是天跑的🌝")
+gg.alert("该版本为v1.0 天跑版")
+gg.alert("介绍:该辅助是天跑的，版权到2021.11.1")
+
+QQ=gg.alert([[
+🔰作者天跑禁止二改，倒卖，圈钱
+我的目的是为了做击败迷你的辅助，不圈钱作者QQ:1764875582，迅速泛滥❗
+  ]],'开启','','🔰复制QQ🔰')
+if QQ == 3 then gg.copyText("1764875582)") gg.toast("√复制完成√") end
+
+QQ=gg.alert([[
+作者天跑禁止二改，倒卖，圈钱❗❗
+  ]],'开启','','♥️复制群号♥️')
+if QQ == 3 then gg.copyText("945899865") gg.toast("√复制完成√") end
+
 function CSH()
 BX(
 {
@@ -40,7 +55,7 @@ BX(
 end 
 a = io.open("/sdcard/苏维埃.txt", "rb") if a == nil then user = "" pass = "" else
 a = io.open("/sdcard/苏维埃.txt"):read("*a") zh = a:match("账号(.-)账号") if a == "" then zh = "" end end
-dI=gg.prompt({"🎡输入你的迷你号🎡","开启初始化（必开）"},{[1] = zh,[2] = true},{[1] = "text",[2] = "checkbox"}) if dI[2] ==true then  CSH() end   zh = dI[1]  io.open("/sdcard/tencent/苏维埃.txt", "w") io.open("/sdcard/tencent/苏维埃.txt", "w"):write("账号" .. zh .. "账号"):close()
+dI=gg.prompt({"输入你的迷你号","开启初始化（必开）"},{[1] = zh,[2] = true},{[1] = "text",[2] = "checkbox"}) if dI[2] ==true then  CSH() end   zh = dI[1]  io.open("/sdcard/苏维埃.txt", "w") io.open("/sdcard/苏维埃.txt", "w"):write("账号" .. zh .. "账号"):close()
 gg.toast("当前迷你号:"..zh.."，一起去旅游了，点击辅助悬浮窗继续")
 
 
@@ -50,13 +65,17 @@ menu1 = gg.choice({
 '炸图区',
 '恶心区',
 '帮助区',
+'无限连跳',
+'无聊区',
 '退出',
-}, nil, "做人不能太简单，也不能太讲究 \n苏维埃辅助总共被启动：" .. qwtjqdcs .. "次")
+}, nil, "做人不能太简单，也不能太讲究 \n当前迷你号:"..zh.."\n苏维埃辅助总共被启动：" .. qwtjqdcs .. "次")
 
 if menu1 == 1 then A() end
 if menu1 == 2 then B() end
 if menu1 == 3 then C() end
-if menu1 == 4 then Exit() end
+if menu1 == 4 then WXLTNBNB() end
+if menu1 == 5 then YYLJNB() end
+if menu1 == 6 then Exit() end
 XGCK=0
 end
 
@@ -72,7 +91,7 @@ menu1 = gg.choice({
 if menu1 == 1 then SCZT() end
 if menu1 == 2 then CZZT() end
 if menu1 == 3 then YFZT() end
-if menu1 == 6 then B() end
+if menu1 == 4 then B() end
 if menu1 == 5 then Main0() end
 XGCK=0
 end
@@ -106,7 +125,7 @@ function B()
     if menu1[10] == true then c10() end   
     if menu1[11] == true then c9() end
     if menu1[12] == true then c10() end
-    if menu1[13] == true then HOME() end
+    if menu1[13] == true then Main0() end
   end
   GLWW=-1
 end
@@ -127,7 +146,11 @@ function SCZT()
     '改创造2.0',
     '编辑器改boos（自然吃屎）',
     '猪蛋改黑龙蛋',
-    '仙人掌改桃木图腾（卡房主崩溃）', 
+    '仙人掌改桃木图腾（卡房主崩溃）',
+     '第八格地形编辑器', 
+     '创造背包', 
+     '联机取物', 
+     '奖杯改炸云服（开启奖杯后再打开）',
     '返回上一页'},
   nil,'他妈之前不行，狗作者终于找到漏洞了')
   if menu1 == nil then else
@@ -144,8 +167,11 @@ function SCZT()
     if menu1[11] == true then zt11() end
     if menu1[12] == true then zt12() end   
     if menu1[13] == true then zt13() end
-    
-    if menu1[14] == true then A() end
+    if menu1[14] == true then zt14() end
+    if menu1[15] == true then zt15() end
+    if menu1[16] == true then zt16() end
+      if menu1[17] == true then zt17() end     
+    if menu1[18] == true then A() end
   end
   GLWW=-1
 end
@@ -184,9 +210,27 @@ if SN[7]== true then
   A7()
 end
 if SN[8]== true then
-  A8()
+  A()
 end
 FX1=0
+end
+
+function YFZT()
+  menu1 = gg.multiChoice({
+    '联机取物（打开奖杯修改，修改后去其他领取）',
+    '奖杯其他改火龙球（要打开奖杯再开启）',
+    '重启云服（选择一个坐骑云服就无了）',
+    '伪装云服服主（需要输入迷你号）',
+    '返回上一页'},
+  nil,'其它功能区')
+  if menu1 == nil then else
+    if menu1[1] == true then zt16() end
+    if menu1[2] == true then zt17() end  
+    if menu1[3] == true then yf1() end
+    if menu1[4] == true then yf2() end
+    if menu1[5] == true then A() end
+  end
+  GLWW=-1
 end
 
 function A1()
@@ -611,7 +655,7 @@ xqmnb(qmnb)
 elseif F == 2 then
 qmnb = {
 {["memory"] = 4},
-{["name"] = "改编辑器"},
+{["name"] = "第八格地形编辑"},
 {["value"] = 10500, ["type"] = 4},
 {["lv"] = 1, ["offset"] = 4, ["type"] = 4},
 {["lv"] = 2, ["offset"] = 8, ["type"] = 4},
@@ -623,6 +667,274 @@ qmxg = {
 xqmnb(qmnb)
 end
 end
+
+function zt15()
+F = gg.alert("🔰请选择｛开 关｝🔰","☠︎开☠︎","☠︎️关☠︎️️")
+ if  F~=1 and F~=2 then
+ gg.toast("你未选择开关默认取消")
+    gg.toast("📌你未选择｛开 关｝")
+  else 
+  end
+if  F== 1 then
+qmnb={
+{["memory"]=16384},
+{["name"]="创造背包开"},
+{["value"]=939814400,["type"]=4},
+{["lv"]=1187006320,["offset"]=8,["type"]=4},
+{["lv"]=939879936,["offset"]=12,["type"]=4}
+}
+qmxg={
+{["value"]=0,["offset"]=-80,["type"]=16}
+}
+xqmnb(qmnb)
+gg.clearResults()
+ elseif  F== 2 then
+qmnb={
+{["memory"]=16384},
+{["name"]="创造背包关"},
+{["value"]=939814400,["type"]=4},
+{["lv"]=1187006320,["offset"]=8,["type"]=4},
+{["lv"]=939879936,["offset"]=12,["type"]=4}
+}
+qmxg={
+{["value"]=13.51617717743,["offset"]=-80,["type"]=16}
+}
+xqmnb(qmnb)
+gg.clearResults()
+end
+end
+
+function zt16()
+gg.alert[[
+★-----xyg-----★
+[武器]15007-罐装手雷
+[武器]15008-菠萝手雷
+[投射物]15050-投射物-野人猎手
+[投射物]15051-投射物-硫黄弓手
+[投射物]15052-投射物-小恶魔
+[投射物]15053-投射物-野生团子
+[投射物]15054-投射物-黑龙火球
+[投射物]15055-投射物-黑龙熔岩石柱
+[投射物]15056-投射物-黑龙熔岩球
+[投射物]15057-投射物-黑龙混乱球
+[投射物]15058-投射物-小外星人A
+[投射物]15059-投射物-小外星人B
+[投射物]15060-投射物-小外星人C
+[投射物]15061-投射物-萌眼叮叮
+[投射物]15062-投射物-萌眼咚咚
+[投射物]15063-投射物-萌眼当当
+[投射物]15064-投射物-萌眼叮咚
+[投射物]15065-投射物-萌眼叮当
+[投射物]15066-投射物-萌眼咚当
+[投射物]15067-投射物-萌眼咻咻
+[投射物]15068-投射物-混乱弓手
+[投射物]15069-投射物-远程守卫
+[投射物]15070-投射物-远程守卫
+[投射物]15071-投射物-远程守卫
+[武器]15505-虚空巨石
+[武器]15506-圆球爆弹
+[武器]15507-冰锥
+[武器]15508-熔岩球
+[投射物]15509-萌眼星BOSS-击飞激光
+[投射物]15510-萌眼星BOSS-冰冻激光
+[投射物]15511-萌眼星BOSS-爆炸激光
+[投射物]15512-萌眼星BOSS-岩石海啸
+[投射物]15513-萌眼星BOSS-蓝色手臂技能
+[投射物]15514-萌眼星BOSS-白色手臂技能
+[投射物]15515-萌眼星BOSS精英怪-蓝色投掷
+[投射物]15516-萌眼星BOSS精英怪-白色投掷
+[投射物]15517-萌眼星BOSS精英怪-蓝色技能
+[投射物]15518-萌眼星BOSS精英怪-白色技能
+[武器]15519-黑龙熔岩球
+[武器]15520-黑龙混乱球
+---投  射  物---
+12299擎天柱炮弹
+12300星星弹
+15509燃烧激光
+15510冰冻激光
+15511爆炸激光
+15512岩石海啸
+15513冰球
+15518特效炸弹
+15519岩浆弹
+15520混乱球_15521
+15051燃烧箭
+15052燃烧雪球
+15053泡泡球
+15056熔岩弹
+15057混乱弹
+15058炸弹
+15059冰锥[不可放置方块]
+15060熔岩球
+15062冰锥
+15064冰炸弹
+15065火炸弹
+15066冰雪弹
+15067紫球
+15068紫箭
+]]
+
+F = gg.alert("🔰请选择🔰","🍁奖杯按钮🍁","🍁️修改物品🍁️️")
+ if  F~=1 and F~=2 then
+ gg.toast("你未选择开关默认取消")
+    gg.toast("📌你未选择｛开 关｝")
+  else 
+  end
+if  F== 1 then
+qmnb = {
+{["memory"] = 4},
+{["name"] = ""},
+{["value"] = 1124859904, ["type"] = 4},
+{["lv"] = -1047527424, ["offset"] = -4, ["type"] = 4},
+{["lv"] = 1065353216, ["offset"] = 0x38, ["type"] = 4},
+{["lv"] = 1065353216, ["offset"] = -0x20, ["type"] = 4},
+{["lv"] = 1113063424, ["offset"] = -0x14, ["type"] = 4},
+{["lv"] = 1113063424, ["offset"] = -0x18, ["type"] = 4},
+{["lv"] = 1050253722, ["offset"] = 0xA0, ["type"] = 4},
+{["lv"] = 1056964608, ["offset"] = 0x98, ["type"] = 4},
+{["lv"] = 16777216, ["offset"] = -0x4C, ["type"] = 4},
+}
+qmxg = {{["value"] = 16777472, ["offset"] = -0x4C, ["type"] = 4, ["freeze"] = true},}
+xqmnb(qmnb)
+gg.clearResults()
+end
+if F==2 then
+dI=gg.prompt({"",""},{[1] = "【物品代码】15056",[2] = "【数量】999"},{[1] = "number",[2] = "number"})   
+Aa1 = dI[1] Aa2 = dI[2]
+qmnb = {
+{["memory"] = 4},
+{["name"] = ""},
+{["value"] = 11012, ["type"] = 4},
+{["lv"] = 2, ["offset"] = -4, ["type"] = 4},
+{["lv"] = 1, ["offset"] = -8, ["type"] = 4},
+{["lv"] = 5, ["offset"] = -16, ["type"] = 4},
+{["lv"] = 0, ["offset"] = 20, ["type"] = 4},
+{["lv"] = 0, ["offset"] = 28, ["type"] = 4},
+{["lv"] = 1, ["offset"] = 32, ["type"] = 4},
+{["lv"] = 11013, ["offset"] = -928, ["type"] = 4},
+
+}
+qmxg = {
+{["value"] = 0, ["offset"] =4, ["type"] = 4},
+{["value"] = 0, ["offset"] =8, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =16, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =24, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x39C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x398, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x390, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x388, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x73C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x738, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x730, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x728, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0xADC, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0xAD8, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0xAD0, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0xAC8, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0xE7C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0xE78, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0xE70, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0xE68, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x121C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x1218, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x1210, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x1208, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x15BC, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x15B8, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x15B0, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x15A8, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x195C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x1958, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x1950, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x1948, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x1CFC, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x1CF8, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x1CF0, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x1CE8, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x209C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x2098, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x2090, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x2088, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x243C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x2438, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x2430, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x2428, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x27DC, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x27D8, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x27D0, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x27C8, ["type"] = 4},
+
+{["value"] = 0, ["offset"] =-0x2B7C, ["type"] = 4},
+{["value"] = 0, ["offset"] =-0x2B78, ["type"] = 4},
+{["value"] = Aa1, ["offset"] =-0x2B70, ["type"] = 4},
+{["value"] = Aa2, ["offset"] =-0x2B68, ["type"] = 4},
+
+ }
+xqmnb(qmnb)
+end
+end
+
+
+
+function zt17()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "其他成就无限领"},
+{["value"] = 1221, ["type"] = 4},
+{["lv"] = 2, ["offset"] = 8, ["type"] = 4},
+{["lv"] = 0, ["offset"] = 12, ["type"] = 4}}
+qmxg = {
+{["value"] = 1, ["offset"] = 12, ["type"] = 4, ["freeze"] = true},
+
+}
+xqmnb(qmnb)
+end
+
+function yf1()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "云服重启"},
+{["value"] = 4842495500454461440, ["type"] =32 },
+{["lv"] = 1127481344, ["offset"] = 4, ["type"] = 4},
+{["lv"] = 1106247680, ["offset"] = 0x14, ["type"] = 4},
+{["lv"] = 1065353216, ["offset"] = 0x50, ["type"] = 4},
+{["lv"] = 1065353216, ["offset"] = -0x8, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 12345, ["offset"] = 0xD4, ["type"] = 4, ["freeze"] = true},
+{["value"] = 16777472, ["offset"] = -0x34, ["type"] = 4, ["freeze"] = true},
+}
+xqmnb(qmnb)
+gg.clearResults()
+end
+
+function yf2()
+b31a= gg.prompt({"输入服主迷你号"},{[1]=0},{[1]="text"})[1]
+qmnb = {
+{["memory"] = 4},
+{["name"] = "伪装房主"},
+{["value"] = b31a, ["type"] = 4},
+{["lv"] = 2, ["offset"] = 44, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 4, ["offset"] = 44, ["type"] = 4},
+}
+xqmnb(qmnb)
+gg.clearResults()
+end
+
+
 
 function c1()
 	 gg.clearResults()
@@ -1121,7 +1433,7 @@ function HS6()
 end
 
 function c10()
-gg.alert("狗作者修复了本功能，本功能教程:找到你对应的等级，把1和2钩上，确定，就可以了，注意:本功能只能领徽章，其余的没啥用")
+gg.alert("狗作者修复了本功能，本功能教程:找到你对应的等级，确定，就可以了，注意:本功能只能领徽章，其余的没啥用")
 SN = gg.choice({
 	 "家园等级1",
 	 "家园等级2",
@@ -1249,20 +1561,235 @@ xqmnb(qmnb)
 gg.clearResults()
 end
 
+function C()
+menu1 = gg.choice({
+'为什么我的游戏闪退?',
+'为什么没有效果?',
+'为什么有些功能变成其他功能了?',
+'为什么我的游戏闪退?',
+'为什么没有效果?',
+'为什么有些功能变成其他功能了?',
+'返回上一页',
+}, nil, "如有错误，请去bbs.madakeji.top建议")
+
+if menu1 == 1 then FK1() end
+if menu1 == 2 then FK2() end
+if menu1 == 3 then FK3() end
+if menu1 == 4 then FK4() end
+if menu1 == 5 then FK5() end
+if menu1 == 6 then FK6() end
+if menu1 == 7 then Main0() end
+XGCK=0
+end
+
+function FK1()
+gg.alert("可能是没有运行守护进程，或者框架问题，还有一部分是game问题，换一下迷你世界就可以了，推荐:4399和小北的跨服迷你")
+C()
+end
+
+function FK2()
+gg.alert("可能是你选的进程不对，请退出看看，或许是本辅助不兼容本迷你世界，请去更换迷你世界")
+C()
+end
+
+function WXLTNBNB()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "连跳飞天开启"},
+{["value"] = 220, ["type"] = 4},
+{["lv"] = 120, ["offset"] = -4, ["type"] = 4},
+{["lv"] = 60, ["offset"] = -16, ["type"] = 4},
+{["lv"] = 120, ["offset"] = 4, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 1, ["offset"] = 128, ["type"] = 4, ["freeze"] = true},
+}
+xqmnb(qmnb)
+end
+
+--[=[
+         
+ -- []测试
+ 
+ 
+ --]]
+     
+]=]
+local g = {}
+g.file = gg.getFile()
+g.sel = nil
+gqlb={"请先搜索歌曲",}
+idb={"1010"}
+SN,gc=1,nil
+g.config = gg.getFile():gsub("%lua$", "").."cfg"
+function bei()
+g.data = loadfile(g.config)
+if g.data ~= nil then
+g.sel = g.data()
+g.data = nil
+end
+if g.sel == nil then
+g.sel = {"亮爽","50"}
+end
+end
+bei()
+------
+--搜索歌曲
+function start(name,sl)
+fw=gg.makeRequest("http://music.163.com/api/search/get?s="..name.."&type=1&offset=0&total=true&limit="..sl)
+return fw
+end
+-----
+--歌词
+
+--播放音乐
+function play(id,name)
+gg.toast("正在播放音乐："..name,true)
+gg.playMusic("http://music.163.com/song/media/outer/url?id="..id..".mp3")
+end
+--停止播放
+function stop()
+gg.toast("正在停止音乐")
+for i=1,100 do
+gg.playMusic("stop")
+gg.playMusic("stop")
+gg.playMusic("stop")
+end
+end
+----
+function Play(gqlb,idb)
+SN = gg.choice(gqlb,nil,ts)
+if SN == nil then XGCK =-1 else
+sn=gg.choice({"播放"},nil,"歌曲："..gqlb[SN])
+if sn == nil then end
+if sn == 1 then
+play(idb[SN],gqlb[SN])
+end
+XGCK=-1
+end
+end
+function zjson(jsonr)
+local str = jsonr
+-- 匹配Json Key的正则表达式
+local pattern = "\"[%w]+\":"
+string.gsub(str, pattern, function(v)
+    if string.find(str, v) then
+        str = string.gsub(str, v, string.gsub(v, "\"", ""))
+    end
+end)
+str = string.gsub(str, ":", "=")
+str = string.gsub(str, "%[", "{")
+str = string.gsub(str, "%]", "}")
+local data = "return " .. str
+local res = load(data)()
+return res
+end
+
+
+function json(con)
+res=zjson(con)
+zd=res.result.songCount
+pd=go3-zd
+if pd <= 0 then else go3=zd end
+ts="《"..go1.."》找到"..zd.."首歌曲，当前显示"..go3.."首"
+gqlb={}
+idb={}
+for i=1,go3 do
+gqlb[i]=res.result.songs[i].name
+idb[i]=res.result.songs[i].id
+end
+--print(idb)
+end
+function YY998() Obtain=gg.makeRequest("https://api.uomg.com/api/rand.music?sort=热歌榜&format=json").content muchen=Obtain:match('url":"(.-)","picurl') gg.playMusic(muchen) end 
+--主页
+
+function YYLJNB()  SN = gg.choice({
+   "搜索歌曲",
+   "搜索列表",
+   "播放热歌",
+   "️停止播放",
+   "清除冻结",
+   "返回主页️",
+},2018,os.date("🌸搜索和播放歌曲。🌸"))
+if SN==1 then s1() end
+if SN==2 then Play(gqlb,idb) end
+if SN==3 then YY998() end
+if SN==4 then stop() end
+if SN==5 then Main11() end
+if SN==6 then Main0() end
+XGCK=-7
+end
+
+---
+function s1()
+search = gg.prompt({
+"输入要搜索的歌曲\n可加上歌手名字",
+"设置显示数量(数字)",
+},g.sel,{
+"text",
+})
+if search == nil then Main6() end
+gg.saveVariable(search,g.config)
+bei()
+go1=search[1]
+go3=search[2]
+jg=start(go1,go3)
+if jg.code == 200 then
+fh=jg.content
+fh=json(fh)
+--print(fh)
+Play(gqlb,idb)
+else
+function inspect()
+gg.alert("访问网络异常，错误代码：\n\n"..jg.code)
+end
+if not pcall(inspect) then print("网络异常，请先连接上网络") os.exit() end
+end
+XGCK=-1
+end
+
+---
+function s1()
+search = gg.prompt({
+"输入要搜索的歌曲\n可加上歌手名字",
+"设置显示数量(数字)",
+},g.sel,{
+"text",
+})
+if search == nil then Main6() end
+gg.saveVariable(search,g.config)
+bei()
+go1=search[1]
+go3=search[2]
+jg=start(go1,go3)
+if jg.code == 200 then
+fh=jg.content
+fh=json(fh)
+--print(fh)
+Play(gqlb,idb)
+else
+function inspect()
+gg.alert("访问网络异常，错误代码：\n\n"..jg.code)
+end
+if not pcall(inspect) then print("网络异常，请先连接上网络") os.exit() end
+end
+XGCK=-1
+end
 
 function Exit()
   print("长风破浪会有时，直挂云帆济沧海。 -［唐］ 李白")
   os.exit()
 end
 	 
-cs = '这里可以填QQ'
+cs = ''
 while(true)do
-if gg.isVisible(true) then
-XGCK=1
-gg.setVisible(false)
+  if gg.isVisible(true) then
+    XGCK=1
+    gg.setVisible(false)
+  end
+  gg.clearResults()
+  if XGCK==1 then
+    Main0()
+  end
 end
-gg.clearResults()
-if XGCK==1 then
-Main0()
-end
-end	 	 
+ 	 

@@ -54,7 +54,7 @@ local xxxxxxx_RC4=true
 --打开 签名放DATA里:打开
 
 
-AMI_YDO="/sdcard/Android/"
+AMI_YDO="/sdcard/"
 --卡密 设备码 路径
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -181,18 +181,18 @@ return HUT
 end
 
 
-km=io.open(AMI_YDO..'/km','r') 
+km=io.open(AMI_YDO..'/tpnb','r') 
 if km==nil  then else 
-km=io.open(AMI_YDO..'/km','r'):read("*a")
+km=io.open(AMI_YDO..'/tpnb','r'):read("*a")
 end--卡密保存到本地
 
 
-e=io.open(AMI_YDO..'/e.log','r')
+e=io.open(AMI_YDO..'/tpnbnb.log','r')
 if e==nil or e:read("*a")== "" then 
 e="1"
-io.open(AMI_YDO..'/e.log','w+'):write(e)--写
+io.open(AMI_YDO..'/tpnbnb.log','w+'):write(e)--写
 else
-e=io.open(AMI_YDO..'/e.log','r'):read("*a")--读
+e=io.open(AMI_YDO..'/tpnbnb.log','r'):read("*a")--读
 end--储存自动登入
 if e== "1" then e=false else  e=true
 end

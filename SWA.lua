@@ -1,7 +1,4 @@
-wljbht = "http://www.iyuji.cn/iyuji/s/b0s3bGFuWUE5bkplUlZvcEhJZkIvZz09/1628485601435205"
-  BX = gg.makeRequest(wljbht).content
-    qwtjqdcs = BX:match("<div class=\"read_txt\">阅读&nbsp; (.-)</div>")
-    gg.alert("苏维埃辅助总共被启动：" .. qwtjqdcs .. "次") 
+
 
 --天跑/苏维埃 配置区，辅助开启
 

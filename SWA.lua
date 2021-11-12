@@ -1,6 +1,4 @@
-
-
---天跑/苏维埃 配置区，辅助开启
+ --天跑/苏维埃 配置区，辅助开启
 
      function WX(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试更换房间")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功，请切换一下物品\n 共注入 1 条冻结数据")else gg.toast(qmnbn.."开启失败，请尝试更换房间")end end end
  function XE(qmnb,qmxg)gg.setVisible(false)gg.clearResults()qmnbv=qmnb[3]["value"]or qmnb[3][1]qmnbt=qmnb[3]["type"]or qmnb[3][2]qmnbn=qmnb[2]["name"]or qmnb[2][1]gg.setRanges(qmnb[1]["memory"]or qmnb[1][1])gg.searchNumber(qmnbv,qmnbt)gg.refineNumber(qmnbv,qmnbt)sz=gg.getResultCount()if sz==0 then gg.toast(qmnbn.."开启失败，请尝试重启游戏")else sl=gg.getResults(999999)for i=1,sz do pdsz=true for v=4,#qmnb do if pdsz==true then pysz={{}}pysz[1].address=sl[i].address+(qmnb[v]["offset"]or qmnb[v][2])pysz[1].flags=qmnb[v]["type"]or qmnb[v][3]szpy=gg.getValues(pysz)tzszpd=tostring(qmnb[v]["lv"]or qmnb[v][1]):gsub(",","")pyszpd=tostring(szpy[1].value):gsub(",","")if tzszpd==pyszpd then pdjg=true pdsz=true else pdjg=false pdsz=false end end end if pdjg==true then szpy=sl[i].address for x=1,#qmxg do xgsz=qmxg[x]["value"]or qmxg[x][1]xgpy=szpy+(qmxg[x]["offset"]or qmxg[x][2])xglx=qmxg[x]["type"]or qmxg[x][3]xgdj=qmxg[x]["freeze"]or qmxg[x][4]xg={{address=xgpy,flags=xglx,value=xgsz}}if xgdj==true then xg[1].freeze=xgdj gg.addListItems(xg)else gg.setValues(xg)end end xgjg=true end end if xgjg==true then gg.toast(qmnbn.."开启成功\n 共注入 1 条数据")else gg.toast(qmnbn.."开启失败，请尝试重启游戏")end end end 
@@ -70,7 +68,7 @@ end
 -----------------防破区------------------------
 
 
-gg.alert("该版本为v1.5 beta 加强版")
+gg.alert("该版本为v1.5 beta1 加强版")
 gg.alert("介绍:该辅助是测试版")
 
 QQ=gg.alert([[
@@ -126,16 +124,16 @@ function Main0()
 menu1 = gg.choice({
 '炸图区',
 '恶心区',
+'狙击区',
 '帮助区',
-'无限连跳（秒开秒退）',
 '无聊区',
 '退出',
-}, nil, "做人不能太简单，也不能太讲究 \n当前迷你号:"..zh.."\n当前进程:["..APP.activities[1].label.."]  进程版本:["..APP.versionName.."]\n有些功能来自神圣")
+}, nil, "做人不能太简单，也不能太讲究 \n当前迷你号:"..zh.."\n当前进程:["..APP.activities[1].label.."]  进程版本:["..APP.versionName.."]\n有些功能是盗的")
 
 if menu1 == 1 then A() end
 if menu1 == 2 then B() end
-if menu1 == 3 then C() end
-if menu1 == 4 then WXLTNBNB() end
+if menu1 == 3 then E() end
+if menu1 == 4 then C() end
 if menu1 == 5 then YYLJNB() end
 if menu1 == 6 then Exit() end
 XGCK=0
@@ -1996,6 +1994,475 @@ if QQ1==3 then Main0() end
 end
 end
 
+function E()  
+SN = gg.multiChoice({
+'改分数',
+'观战模式',
+'狙击连发',
+'怒海连发',
+'人物上色',
+'三角透视',
+'子弹穿墙',
+'狙击强化',
+'冲锋强化',
+'重机强化',
+'修改队伍',
+'灵魂出窍',
+'锁高度',
+'狙击一件套',
+"返 回 主 页",
+}, nil, "感谢凉情大帅锅的源码")
+ if SN == nil then else
+if SN[1]==true then	 jj1() end
+if SN[2]==true then	 jj2() end
+if SN[3]==true then	 jj3() end
+if SN[4]==true then	 jj4() end
+if SN[5]==true then	 jj5() end
+if SN[6]==true then	 jj6() end
+if SN[7]==true then	 jj7() end
+if SN[8]==true then	 jj8() end
+if SN[9]==true then	 jj9() end
+if SN[10]==true then	 jj10() end
+if SN[11]==true then	 jj11() end
+if SN[12]==true then	 jj12() end
+if SN[13]==true then	 jj13() end
+if SN[14]==true then	 jj14() end
+if SN[15]==true then	 Main() end
+end
+FX=0 end
+
+
+function jj1()
+m3= gg.choice({
+    "🧊红队🧊",
+    "🧊蓝队🧊",
+    "🧊绿队️🧊",
+    "🧊黄队🧊",
+    "🧊橙队🧊",    
+    "🧊紫队🧊",    
+    "𒅒🎡返回主页🎡𒅒",},2018,os.date("⚠️凉情⚠️"))
+if m3==1 then  mvi1() end
+if m3==2 then  mvi2() end
+if m3==3 then  mvi3() end
+if m3==4 then  mvi4() end
+if m3==5 then  mvi5() end
+if m3==6 then  mvi6() end
+if m3==7 then  Main() end
+XGCK=-1 end
+
+
+
+
+
+function mvi1()
+mn1=gg.prompt({"『当前红队分数』"},{'0'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入修改后的红队分数』"},{'520'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{600, 0}, {mn1, -120},{-1, -984} }
+local tb2 = {{mn2, -120  }, }
+SearchWrite(tb1, tb2, dataType)
+	 gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+function mvi2()
+mn1=gg.prompt({"『当前蓝队分数』"},{'0'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入修改后的蓝队分数』"},{'520'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{600, 0}, {mn1, -104},{-1, -984} }
+local tb2 = {{mn2, -104  }, }
+SearchWrite(tb1, tb2, dataType)
+ gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+
+
+function mvi3()
+mn1=gg.prompt({"『当前绿队分数』"},{'0'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入修改后的绿队分数』"},{'520'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{600, 0}, {mn1, -88},{-1, -984} }
+local tb2 = {{mn2, -88  }, }
+SearchWrite(tb1, tb2, dataType)
+gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+
+function mvi4()
+mn1=gg.prompt({"『当前黄队分数』"},{'0'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入修改后的黄队分数』"},{'520'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{600, 0}, {mn1, -72},{-1, -984} }
+local tb2 = {{mn2, -72  }, }
+SearchWrite(tb1, tb2, dataType)
+gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+
+
+function mvi5()
+mn1=gg.prompt({"『当前橙队分数』"},{'0'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入修改后的橙队分数』"},{'520'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{600, 0}, {mn1, -56},{-1, -984} }
+local tb2 = {{mn2, -56  }, }
+SearchWrite(tb1, tb2, dataType)
+gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+
+function mvi6()
+mn1=gg.prompt({"『当前紫队分数』"},{'0'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入修改后的紫队分数』"},{'520'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{600, 0}, {mn1, -40},{-1, -984} }
+local tb2 = {{mn2, -40  }, }
+SearchWrite(tb1, tb2, dataType)
+gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+
+
+function jj2()
+gg.toast("请选择观战模式开关")
+F=gg.alert("🌚请选择观战模式｛开 关｝🌚", "🌞开🌞", "🌝关🌝")
+if F ~= 1 and F ~= 2 then
+gg.toast("你未选择开关默认取消")
+gg.toast("你未选择｛开 关｝")
+else
+end
+if F==1 then
+qmnb={
+{["memory"]=4},
+{["name"]="观战模式"},
+{["value"]=1121452032,["type"]=4},
+{["lv"]=1118568448,["offset"]=-4,["type"]=4},
+{["lv"]=16777216,["offset"]=-56,["type"]=4},
+{["lv"]=1065353216,["offset"]=-12,["type"]=4}
+}
+qmxg={
+{["value"]=16777472,["offset"]=-56,["type"]=4,["freeze"]=true}
+}
+xqmnb(qmnb)
+elseif F==2 then
+qmnb={
+{["memory"]=4},
+{["name"]="观战模式"},
+{["value"]=1121452032,["type"]=4},
+{["lv"]=1118568448,["offset"]=-4,["type"]=4},
+{["lv"]=16777472,["offset"]=-56,["type"]=4},
+{["lv"]=1065353216,["offset"]=-12,["type"]=4}
+}
+qmxg={
+{["value"]=16777216,["offset"]=-56,["type"]=4,["freeze"]=true}
+}
+xqmnb(qmnb)
+end
+end
+
+
+function jj3()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "狙击枪"},
+{["value"] = 15004, ["type"] = 4},
+{["lv"] = 15004, ["offset"] = 4, ["type"] = 4},
+{["lv"] = 15003, ["offset"] = 140, ["type"] = 4},
+}
+qmxg = {
+{["value"] =0, ["offset"] = 72, ["type"] = 4},
+{["value"] =0, ["offset"] = 104, ["type"] = 4},
+{["value"] =1, ["offset"] = 136, ["type"] = 4},
+{["value"] =32000, ["offset"] = 0x4E, ["type"] = 2},
+}
+xqmnb(qmnb)
+end
+	
+function jj4()
+gg.clearResults()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "狙击枪"},
+{["value"] = 65536100, ["type"] = 4},
+{["lv"] = 15004, ["offset"] = -68, ["type"] = 4},
+{["lv"] = 15003, ["offset"] = 68, ["type"] = 4},
+}
+qmxg = {
+{["value"] =0, ["offset"] = 0, ["type"] = 4},
+{["value"] =0, ["offset"] = 32, ["type"] = 4},
+{["value"] =0, ["offset"] = 28, ["type"] = 4},
+{["value"] =1, ["offset"] = 64, ["type"] = 4},
+{["value"] =32000, ["offset"] = 0x6, ["type"] = 2},
+}	
+ xqmnb(qmnb)
+end
+
+
+
+
+function jj5()
+gg.toast("请选择开关")
+F = gg.alert("🔰请选择｛开 关｝🔰","🍁开🍁","🍁️关🍁️️")
+ if  F~=1 and F~=2 then
+ gg.toast("你未选择开关默认取消")
+    gg.toast("📌你未选择｛开 关｝")
+  else 
+  end
+if  F== 1 then
+qmnb = {
+{["memory"] = 16384},
+{["name"] = "人物上色"},
+{["value"] = 472408120, ["type"] = 4},
+{["lv"] = 1075844388, ["offset"] = 4, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 0, ["offset"] = 24, ["type"] = 16},
+}
+xqmnb(qmnb)
+gg.clearResults()
+ elseif F == 2 then
+qmnb = {
+{["memory"] = 16384},
+{["name"] = "人物上色"},
+{["value"] = 472408120, ["type"] = 4},
+{["lv"] = 1075844388, ["offset"] = 4, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 15, ["offset"] = 24, ["type"] = 16},
+}
+xqmnb(qmnb)
+gg.clearResults()
+ 
+ end
+end
+
+
+function jj6()
+gg.toast("请选择开关")
+F=gg.alert("请选择｛开 关｝", "开", "️关️️")
+if F ~= 1 and F ~= 2 then
+gg.toast("你未选择开关默认取消")
+gg.toast("你未选择｛开 关｝")
+else
+end
+if F==1 then
+qmnb={
+{["memory"]=32768},
+{["name"]="三角透视"},
+{["value"]=196608,["type"]=4},
+{["lv"]=65538,["offset"]=8,["type"]=4},
+{["lv"]=65536,["offset"]=12,["type"]=4},
+{["lv"]=196610,["offset"]=20,["type"]=4}
+}
+qmxg={
+{["value"]=1,["offset"]=12,["type"]=4}
+}
+xqmnb(qmnb)
+elseif F==2 then
+qmnb={
+{["memory"]=32768},
+{["name"]="三角透视"},
+{["value"]=196608,["type"]=4},
+{["lv"]=65538,["offset"]=8,["type"]=4},
+{["lv"]=1,["offset"]=12,["type"]=4},
+{["lv"]=196610,["offset"]=20,["type"]=4}
+}
+qmxg={
+{["value"]=65536,["offset"]=12,["type"]=4}
+}
+xqmnb(qmnb)
+end
+end
+function jj7()
+gg.toast("请选择开关")
+F = gg.alert("🔰请选择｛开 关｝🔰","🍁开🍁","🍁️关🍁️️")
+ if  F~=1 and F~=2 then
+ gg.toast("你未选择开关默认取消")
+    gg.toast("📌你未选择｛开 关｝")
+  else 
+  end
+if  F== 1 then
+qmnb = {
+{["memory"] = 16384},
+{["name"] = "子弹穿墙"},
+{["value"] = 1099112024, ["type"] = 4},
+{["lv"] = 1113299465, ["offset"] = 4, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 0, ["offset"] = 16, ["type"] = 16},
+}
+xqmnb(qmnb)
+ elseif F == 2 then
+qmnb = {
+{["memory"] = 16384},
+{["name"] = "子弹穿墙"},
+{["value"] = 1099112024, ["type"] = 4},
+{["lv"] = 1113299465, ["offset"] = 4, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 100, ["offset"] = 16, ["type"] = 16},
+}
+xqmnb(qmnb)
+end
+end
+
+
+
+function jj8()
+ A4 = gg.prompt({"『输入子弹代码』12299擎天柱炮弹-12300星星弹-15509燃烧激光-15510冰冻激光-15511爆炸激光-15512岩石海啸-15513冰球-15518特效炸弹-15519岩浆弹-15520混乱球_15521_15051燃烧箭-15052燃烧雪球-15053泡泡球-15056熔岩弹-15057混乱弹-15058炸弹-15059冰锥[不可放置方块]-15060熔岩球-15062冰锥-15064冰炸弹-15065火炸弹-15066冰雪弹-15067紫球-15068紫箭"}
+,{[1]=12299},{[1]="number"})[1]
+ qmnb = {
+{["memory"] = 4},
+{["name"] = "狙击枪强化"},
+{["value"] = 1155186688, ["type"] = 4},
+{["lv"] = 1152319488, ["offset"] = 4, ["type"] = 4},
+{["lv"] = 1137836032, ["offset"] = 8, ["type"] = 4},
+}
+qmxg = {
+{["value"] = A4, ["offset"] = 24, ["type"] = 4},
+{["value"] = 1, ["offset"] = 20, ["type"] = 4},
+{["value"] = 0, ["offset"] = -28, ["type"] = 16},
+{["value"] = 0, ["offset"] = -44, ["type"] = 16},
+}
+xqmnb(qmnb)
+end
+
+
+function jj9()
+ A5 = gg.prompt({"『输入子弹代码』12299擎天柱炮弹-12300星星弹-15509燃烧激光-15510冰冻激光-15511爆炸激光-15512岩石海啸-15513冰球-15518特效炸弹-15519岩浆弹-15520混乱球_15521_15051燃烧箭-15052燃烧雪球-15053泡泡球-15056熔岩弹-15057混乱弹-15058炸弹-15059冰锥[不可放置方块]-15060熔岩球-15062冰锥-15064冰炸弹-15065火炸弹-15066冰雪弹-15067紫球-15068紫箭"}
+,{[1]=12299},{[1]="number"})[1]
+ qmnb = {
+{["memory"] = 4},
+{["name"] = "冲锋枪强化"},
+{["value"] = 1154613248, ["type"] = 4},
+{["lv"] = 1149861888, ["offset"] = 4, ["type"] = 4},
+{["lv"] = 1123024896, ["offset"] = 8, ["type"] = 4},
+}
+qmxg = {
+{["value"] = A5, ["offset"] = 24, ["type"] = 4},
+{["value"] = 1, ["offset"] = 20, ["type"] = 4},
+{["value"] = 0, ["offset"] = -28, ["type"] = 16},
+{["value"] = 0, ["offset"] = -44, ["type"] = 16},
+}
+xqmnb(qmnb)
+end
+
+
+function jj10()
+ A6 = gg.prompt({"『输入子弹代码』12299擎天柱炮弹-12300星星弹-15509燃烧激光-15510冰冻激光-15511爆炸激光-15512岩石海啸-15513冰球-15518特效炸弹-15519岩浆弹-15520混乱球_15521_15051燃烧箭-15052燃烧雪球-15053泡泡球-15056熔岩弹-15057混乱弹-15058炸弹-15059冰锥[不可放置方块]-15060熔岩球-15062冰锥-15064冰炸弹-15065火炸弹-15066冰雪弹-15067紫球-15068紫箭"}
+,{[1]=12299},{[1]="number"})[1]
+ qmnb = {
+{["memory"] = 4},
+{["name"] = "重机枪强化"},
+{["value"] = 1157840896, ["type"] = 4},
+{["lv"] = 1149861888, ["offset"] = 4, ["type"] = 4},
+{["lv"] = 1123024896, ["offset"] = 8, ["type"] = 4},
+}
+qmxg = {
+{["value"] = A6, ["offset"] = 24, ["type"] = 4},
+{["value"] = 1, ["offset"] = 20, ["type"] = 4},
+{["value"] = 0, ["offset"] = -28, ["type"] = 16},
+{["value"] = 0, ["offset"] = -44, ["type"] = 16},
+}
+xqmnb(qmnb)
+end
+
+
+
+
+
+
+
+function jj11()
+   mn1=gg.prompt({"『请输入你的迷你号』"},{'1290473051'},{"number"})[1]
+gg.clearResults()
+mn2=gg.prompt({"『请输入你现在的队伍』1－红队 2－蓝队 3－绿 4－黄 5－橙 6－紫"},{'1'},{"number"})[1]
+gg.clearResults()
+mn3=gg.prompt({"『请输入你要改成的队伍』1－红队 2－蓝队 3－绿 4－黄 5－橙 6－紫"},{'1'},{"number"})[1]
+    gg.setRanges(4)
+local dataType = 4
+local tb1 = {{mn1, 0}, {mn2, 244},}
+local tb2 = {{mn3, 244  }, }
+SearchWrite(tb1, tb2, dataType)
+gg.toast("吔屎啦你")
+	 gg.clearResults()
+end
+
+
+
+function jj12()
+s = gg.prompt({"请输入要修改的大小"}
+,{[1]=6},{[1]="number"})[1]
+gg.clearResults()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "灵魂出窍"},
+{["value"] = 1053609165, ["type"] = 4},
+{["lv"] = 1053609165, ["offset"] = -4, ["type"] = 4},
+{["lv"] = 16777472, ["offset"] = -216, ["type"] = 4},
+{["lv"] = 1065353216, ["offset"] = -368, ["type"] = 4},
+}
+qmxg = {
+{["value"] = s, ["offset"] = -368, ["type"] = 16, ["freeze"] = true},
+
+}
+xqmnb(qmnb)
+gg.clearResults()
+end
+
+
+
+
+function jj13()
+gg.clearList()
+qmnb = {
+{["memory"] = 4},
+{["name"] = "锁定高度"},
+{["value"] = 515396075740, ["type"] = 32},
+{["lv"] = 60, ["offset"] = -16, ["type"] = 4},
+{["lv"] = 180, ["offset"] = -12, ["type"] = 4},
+{["lv"] = 120, ["offset"] = -4, ["type"] = 4},
+}
+qmxg = {
+{["value"] = 800, ["offset"] = 12, ["type"] = 4, ["freeze"] = true},
+}
+xqmnb(qmnb)
+ gg.toast("加上超远攻击直接乱杀")
+end
+
+
+function jj14()
+qmnb = {
+{["memory"] = 16384},
+{["name"] = "生物透视+生物上色+生物方框"},
+{["value"] = 1953066601, ["type"] = 4},
+{["lv"] = 0, ["offset"] = 4, ["type"] = 4},
+{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
+{["lv"] = 1, ["offset"] =12 , ["type"] = 4},
+}
+qmxg = {
+{["value"] = 1, ["offset"] = 8, ["type"] = 4},
+{["value"] = -99, ["offset"] = 12, ["type"] = 4},
+}
+xqmnb(qmnb)
+end
 
 
 
@@ -2223,6 +2690,7 @@ end
 XGCK=-1
 end
 
+
 function Exit()
   print("长风破浪会有时，直挂云帆济沧海。 -［唐］ 李白")
   os.exit()
@@ -2241,3 +2709,5 @@ while(true)do
     Main0()
   end
 end
+ 	
+

@@ -130,7 +130,7 @@ menu1 = gg.choice({
 '无限连跳（秒开秒退）',
 '无聊区',
 '退出',
-}, nil, "做人不能太简单，也不能太讲究 \n当前迷你号:"..zh.."\n当前进程:["..APP.activities[1].label.."]  进程版本:["..APP.versionName.."]\n有些功能来自神圣\n苏维埃辅助总共被启动：" .. qwtjqdcs .. "次")
+}, nil, "做人不能太简单，也不能太讲究 \n当前迷你号:"..zh.."\n当前进程:["..APP.activities[1].label.."]  进程版本:["..APP.versionName.."]\n有些功能来自神圣")
 
 if menu1 == 1 then A() end
 if menu1 == 2 then B() end

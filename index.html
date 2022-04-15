@@ -1,133 +1,29 @@
-Y=gg.makeRequest(string.char(104,116,116,112,115,58,47,47,118,49,46,104,105,116,111,107,111,116,111,46,99,110,47)).content
---获取云端数据
-Q=string.match(Y,string.char(104,105,116,111,107,111,116,111,40,46,43,41,116,121,112,101))
---模式匹配他们中的一切字符
-F=string.gsub(Q,string.char(34,58,34),string.char())
-K=string.gsub(F,string.char(34,44,34),string.char())
-
-gg.alert("开始验证，开启验证点确定","确定")
-function file_exists(path)
-local file=io.open(path,"rb")
-if file then
-file:close()
-return 1
-else
-return 2
-end
-end
-local lj="/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/"
-local qlj="/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/"
-local qq="/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/"
---对应的路径
-local ms=file_exists(lj.."983783457_crpty.db")
-local ms=file_exists(qq.."366712423_crpty.db")
---通缉QQ文件
-qqh={
-"983783457"
-}
---通缉QQ
-local sq1=0
-for i,v in ipairs(qqh) do
-if file_exists(qlj..v.."366712423_crpty.db")==1 then
-sq1=1
-if ms==1 then
-os.remove(lj.."983783457_crpty.db")
-os.remove(qq.."366712423_crpty.db")
-end
-break
-end
-end
-if  sq1==0 then
-if ms==2 then
-gg.alert("验证通过","开始开挂炸迷你")
-else
-local file=io.open(lj.."983783457_crpty.db","r")
-local file=io.open(qq.."366712423_crpty.db","r")
-assert(file)
-local data=file:read("*a")
-file:close()
-if string.find(data,"yicyic")==nil then
-gg.alert("傻逼，你被通缉了，禁止使用天跑辅助😡🖕🖕🖕🖕")
-print("傻逼东西，你被通缉了") 
-os.exit()
-else
-local yic7=string.gsub(data,"p5","")
-yic7=string.gsub(yic7,"n3","")
-yic7=string.gsub(yic7,"m9","")
-yic7=string.gsub(yic7,"%a","")
-if file_exists(qlj..yic7.."366712423_crpty.db")==2 then
-gg.alert("出现错误：原因:十六进制改变")
-os.exit()
-end
-end
-end
-end
-
-
-
-gg.alert("更新公告:苏维埃辅助测试版来了，迅速泛滥")
-
- gg.toast("正在连接安全证书15％") gg.sleep(320) gg.toast("正在注入数据30％") gg.sleep(320) print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)print(i)
-gg.toast("正在连接本地48％")
-gg.sleep(320)
-gg.toast("正在连接网络64%")
-gg.sleep(360)
-gg.toast("正在连接马达科技76%")
-gg.sleep(360)
-gg.toast("正在重新检测安全证书85%")
-gg.sleep(360)
-gg.toast("开启成功 ")
-gg.sleep(100)
-
-
---天跑辅助
---交流群：645398481
---请勿搬运代码以及二改圈钱
---二改没🐎
---请把游戏更新至最新版本
---游戏版本过低将无法使用该脚本
-
-
+gg.alert("该外挂已违法，目前作者已被抓捕")
+gg.alert("该外挂让迷你玩科技有限公司损失100人民币")
+gg.alert("并且该辅助损坏“迷你世界”的经营，请立即退出本辅助，不要继续损坏迷你玩科技有限公司的经营，谢谢你的配合")
 
 function Main()
-SJ = os.date("当前时间%Y年%m月%d日%H时%M分%S秒")
-SN = gg.choice({
-	"天跑辅助2.5 ",
-	 "天跑辅助简洁版",
-	 "苏维埃炸图辅助（迅速泛滥）",
+SJ = os.date("北京时间:%Y年%m月%d日%H时%M分%S秒")
+menu = gg.choice({
 	 "退出",
-}, nil, "恭喜你可以使用🌚")
-if SN==1 then
-     TP()
-end
-if SN==2 then
-	 TPJJ()
-end
-if SN==3 then
-	 SWA()	 
-end
-if SN==4 then
-	 Exit()	 
-end
-FX=0
+}, nil, "作者已被抓捕\n"..SJ.."\n作者因损坏迷你玩科技有限公司的经营而被抓捕\n作者已被抓捕")
+if menu == 1 then Exit() end
+FX1=0
 end
 
-function TP()
- pcall(load(gg.makeRequest("http://zl.lnlcup.cn/a/1628564224.lua").content))
-end
 
-function TPJJ()
- pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/TPNB.html").content))
-end
 
-function SWA()
-pcall(load(gg.makeRequest("https://1764875582.github.io/TPFZ/SWA.lua").content))
-end
+
+
+
+
+
+
 
 
 
 function Exit()
-  print("长风破浪会有时，直挂云帆济沧海。 -［唐］ 李白")
+  print("谢谢您的配合，抵制外挂，共创绿色游戏环境!")
   os.exit()
 end
 
@@ -148,3 +44,4 @@ while(true)do
     Main()
   end
 end
+
